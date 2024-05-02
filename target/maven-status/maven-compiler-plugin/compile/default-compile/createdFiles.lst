@@ -1,6 +1,9 @@
-personalfinancemanagement\userAuthentication.class
-personalfinancemanagement\dashboard.class
 personalfinancemanagement\DatabaseManager.class
+personalfinancemanagement\IncomeTracker.class
 personalfinancemanagement\PersonalFinanceManagement.class
 personalfinancemanagement\userLogin.class
+personalfinancemanagement\IncomeTracker$2.class
+personalfinancemanagement\userAuthentication.class
+personalfinancemanagement\dashboard.class
+personalfinancemanagement\IncomeTracker$1.class
 personalfinancemanagement\userRegistration.class

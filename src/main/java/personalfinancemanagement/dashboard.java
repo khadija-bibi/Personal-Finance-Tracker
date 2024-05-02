@@ -18,7 +18,7 @@ public class dashboard implements ActionListener{
         dashboard.add(title);
         
         incomeTracking = new JButton("Income Tracker");
-        incomeTracking.setBounds(170, 210, 180, 30);
+        incomeTracking.setBounds(250, 210, 180, 30);
         dashboard.add(incomeTracking);
         incomeTracking.addActionListener(this);
         
@@ -51,7 +51,7 @@ public class dashboard implements ActionListener{
         
         dashboard.setTitle("User Login");
         dashboard.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        dashboard.setSize(550, 700);
+        dashboard.setSize(900, 700);
         dashboard.setResizable(false);
         dashboard.setLocationRelativeTo(null);
         dashboard.setLayout(null);
@@ -61,6 +61,9 @@ public class dashboard implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        if(e.getSource().equals(incomeTracking)){
+            IncomeTracker incomeTrackerFrame = new IncomeTracker();
+            dashboard.dispose(); // Dispose the Dashboard frame
+        }
     }
 }
